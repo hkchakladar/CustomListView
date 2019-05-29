@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Poster"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="Movie Name "
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="7dp"
+        android:id="@+id/rating"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="Rating: 8.7/10"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/released"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="2019"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        app:layout_constraintTop_toBottomOf="@id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
